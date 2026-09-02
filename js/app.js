@@ -6,6 +6,18 @@ if (shouldShowLoader) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const existingFooter = document.querySelector("footer.footer");
+  if (existingFooter) {
+    fetch("footer.html")
+      .then(response => response.ok ? response.text() : Promise.reject(new Error("Footer unavailable")))
+      .then(markup => {
+        existingFooter.outerHTML = markup;
+        const year = document.querySelector("[data-footer-year]");
+        if (year) year.textContent = new Date().getFullYear();
+      })
+      .catch(() => {});
+  }
+
   const pageLoader = document.querySelector(".page-loader");
   const showLoader = () => {
     document.body.classList.add("is-loading");
