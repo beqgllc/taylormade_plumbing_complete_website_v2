@@ -1,23 +1,161 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | TaylorMade Plumbing</title>
-<meta name="description" content="TaylorMade Plumbing — St. Petersburg, Florida. Residential plumbing services including water heaters, fixture work, repiping, drains, gas lines and remodel plumbing.">
-<link rel="icon" href="assets/monogram.png">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+>
+
+<title>St. Petersburg FL Plumber | TaylorMade Plumbing</title>
+
+<meta
+  name="description"
+  content="TaylorMade Plumbing provides residential plumbing services in St. Petersburg and Tampa Bay, including water heaters, drains, fixtures, repiping and remodels."
+>
+
+<link
+  rel="canonical"
+  href="https://taylormadeplumbing.vercel.app/"
+>
+
+<link
+  rel="icon"
+  href="/assets/monogram.png"
+>
+
+<link
+  rel="preload"
+  as="image"
+  href="/assets/home-hero.png"
+  fetchpriority="high"
+>
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+
+<meta
+  property="og:title"
+  content="St. Petersburg FL Plumber | TaylorMade Plumbing"
+>
+
+<meta
+  property="og:description"
+  content="Residential plumbing services in St. Petersburg and Tampa Bay, including water heaters, drains, fixtures, repiping and remodel plumbing."
+>
+
+<meta
+  property="og:url"
+  content="https://taylormadeplumbing.vercel.app/"
+>
+
+<meta
+  property="og:image"
+  content="https://taylormadeplumbing.vercel.app/assets/home-hero.png"
+>
+
+<meta
+  property="og:image:alt"
+  content="TaylorMade Plumbing residential plumbing service in St. Petersburg, Florida"
+>
+
+<meta
+  property="og:site_name"
+  content="TaylorMade Plumbing"
+>
+
+<!-- Twitter / X -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="St. Petersburg FL Plumber | TaylorMade Plumbing"
+>
+
+<meta
+  name="twitter:description"
+  content="Residential plumbing services in St. Petersburg and Tampa Bay, including water heaters, drains, fixtures, repiping and remodel plumbing."
+>
+
+<meta
+  name="twitter:image"
+  content="https://taylormadeplumbing.vercel.app/assets/home-hero.png"
+>
+
+<meta
+  name="twitter:image:alt"
+  content="TaylorMade Plumbing residential plumbing service in St. Petersburg, Florida"
+>
+
+<!-- Local Business Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "@id": "https://taylormadeplumbing.vercel.app/#plumber",
+  "name": "TaylorMade Plumbing LLC",
+  "url": "https://taylormadeplumbing.vercel.app/",
+  "telephone": "+1-727-494-4384",
+  "image": "https://taylormadeplumbing.vercel.app/assets/taylormade-logo.png",
+  "logo": "https://taylormadeplumbing.vercel.app/assets/taylormade-logo.png",
+  "description": "Residential plumbing services serving St. Petersburg and the surrounding Tampa Bay area.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1910 23rd Ave N",
+    "addressLocality": "St. Petersburg",
+    "addressRegion": "FL",
+    "postalCode": "33713",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "St. Petersburg"
+    },
+    {
+      "@type": "Place",
+      "name": "Tampa Bay"
+    }
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Florida Certified Plumbing Contractor License",
+    "identifier": "CFC1432798"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-727-494-4384",
+    "contactType": "customer service"
+  }
+}
+</script>
+
 <script>
   (function() {
     try {
-      const shouldShowLoader = !sessionStorage.getItem('taylorMadeLoaderShown');
+      const shouldShowLoader =
+        !sessionStorage.getItem('taylorMadeLoaderShown');
+
       if (shouldShowLoader) {
         document.documentElement.classList.add('is-loading');
-        document.body && document.body.classList.add('is-loading');
+        document.body &&
+          document.body.classList.add('is-loading');
       }
     } catch (e) {}
   })();
 </script>
+
 <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 <div class="topbar"><div class="container"><span>St. Petersburg, Florida</span><span>Certified Plumbing Contractor • CFC1432798</span></div></div>
@@ -35,13 +173,34 @@
 <nav class="mobile-menu"><a data-nav href="index.html">HOME</a><a data-nav href="about.html">ABOUT US</a><a data-nav href="services.html">SERVICES</a><a data-nav href="reviews.html">REVIEWS</a><a data-nav href="service-areas.html">SERVICE AREAS</a><a data-nav href="contact.html">CONTACT</a><a href="schedule.html">SCHEDULE NOW</a><a href="book-service.html">BOOK SERVICE</a></nav>
 
 <section class="hero hero-photo">
-  <img class="hero-photo-bg" src="assets/home-hero.png" alt="TaylorMade plumber working on residential plumbing">
+  <picture>
+  <source
+    srcset="assets/home-hero.webp"
+    type="image/webp"
+  >
+
+  <img
+  src="assets/home-hero-1920.webp"
+  srcset="
+    assets/home-hero-768.webp 768w,
+    assets/home-hero-1280.webp 1280w,
+    assets/home-hero-1920.webp 1920w
+  "
+  sizes="100vw"
+  alt="TaylorMade Plumbing technician providing residential service in St. Petersburg, Florida"
+  width="1920"
+  height="1080"
+  fetchpriority="high"
+  decoding="async"
+  >
+  </picture>
   <div class="hero-photo-overlay"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
       <div class="eyebrow">St. Petersburg Plumbing</div>
       <h1>HONEST. RELIABLE.<br><span>TAYLORMADE.</span></h1>
       <p>Quality plumbing solutions done right the first time. From everyday repairs to water heaters, repiping, drains, fixtures and remodel plumbing.</p>
+
       <div class="hero-features">
         <div class="hero-feature">
           <span class="hero-feature-icon" aria-hidden="true">
@@ -56,9 +215,20 @@
         <div class="hero-feature"><span class="hero-feature-icon">$</span><div><strong>FREE ESTIMATES</strong><small>On-site evaluation options</small></div></div>
         <div class="hero-feature"><span class="hero-feature-icon">✓</span><div><strong>LICENSED</strong><small>CFC1432798</small></div></div>
       </div>
-      <div class="hero-actions"><a class="btn btn-primary" href="schedule.html">SCHEDULE NOW</a><a class="btn btn-outline" href="tel:+17274944384">CALL (727) 494-4384</a></div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="schedule.html">SCHEDULE NOW</a>
+        <a class="btn btn-outline" href="tel:+17274944384">CALL (727) 494-4384</a>
+      </div>
     </div>
-    <div class="hero-spotlight"><div class="spotlight-card"><span>BUILT FOR HOMEOWNERS</span><strong>Clear answers.<br>Professional work.</strong><p>Direct communication, reliable workmanship and respect for your home.</p></div></div>
+
+    <div class="hero-spotlight">
+      <div class="spotlight-card">
+        <span>BUILT FOR HOMEOWNERS</span>
+        <strong>Clear answers.<br>Professional work.</strong>
+        <p>Direct communication, reliable workmanship and respect for your home.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -77,18 +247,107 @@
   <div class="container feature-row">
     <div>
       <div class="eyebrow">Why TaylorMade</div>
-      <h2 class="section-subhead">SERVICE BUILT AROUND TRUST</h2>
-      <p class="section-subcopy">Customer feedback consistently emphasizes responsiveness, professionalism, clear explanations, workmanship, and leaving the work area clean.</p>
+
+      <h2 class="section-subhead">RESIDENTIAL SERVICE BUILT AROUND TRUST</h2>
+
+      <p class="section-subcopy">
+        TaylorMade Plumbing LLC serves homeowners in St. Petersburg and communities throughout the Tampa Bay area. Our focus is straightforward: understand the problem, explain the available options clearly, complete the agreed work professionally, and leave the work area orderly.
+      </p>
+
+      <p class="section-subcopy">
+        Homeowners may need help with a leaking fixture, a water heater that is no longer working properly, a clogged or damaged drain, aging supply lines, repiping, gas-line work, or plumbing associated with a kitchen or bathroom renovation. TaylorMade provides residential service for these types of projects and can help determine the appropriate next step.
+      </p>
+
+      <p class="section-subcopy">
+        Communication is an important part of the customer experience. Instead of leaving homeowners guessing about what is happening, the goal is to explain the issue in understandable terms and discuss the available path forward. Service is centered on responsiveness, workmanship, professionalism, and respect for the customer's home.
+      </p>
+
       <div class="checks">
-        <div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Responsive communication and clear explanations.</span></div>
-        <div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Water heater, fixture, drain, repiping and remodel capability.</span></div>
-        <div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Documented permitted plumbing work in the Tampa Bay area.</span></div>
-        <div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Florida certified plumbing contractor license CFC1432798.</span></div>
+        <div class="check">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6"/>
+          </svg>
+          <span>Responsive communication and clear explanations.</span>
+        </div>
+
+        <div class="check">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6"/>
+          </svg>
+          <span>Water heater, fixture, drain, repiping and remodel capability.</span>
+        </div>
+
+        <div class="check">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6"/>
+          </svg>
+          <span>Service for homeowners throughout the St. Petersburg area.</span>
+        </div>
+
+        <div class="check">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4L19 6"/>
+          </svg>
+          <span>Florida certified plumbing contractor license CFC1432798.</span>
+        </div>
       </div>
     </div>
+
     <div class="logo-panel">
-      <img class="panel-monogram" src="assets/monogram.png" alt="TaylorMade Plumbing monogram">
+      <picture>
+        <source
+        srcset="assets/monogram.webp"
+        type="image/webp"
+        >
+        
+  <img
+    class="panel-monogram"
+    src="assets/monogram.png"
+    alt="TaylorMade Plumbing monogram"
+    width="300"
+    height="300"
+    fetchpriority="high"
+    decoding="async"
+  >
+</picture>
+      >
     </div>
+  </div>
+</section> 
+
+<section class="section">
+  <div class="container section-head">
+    <div class="eyebrow">Service Area</div>
+    <h2>LOCAL SERVICE FOR ST. PETERSBURG &amp; TAMPA BAY</h2>
+
+    <p>
+      TaylorMade Plumbing is based in St. Petersburg, Florida and serves homeowners throughout the surrounding Tampa Bay area. If you are unsure whether your address falls within the current service area, contact TaylorMade before scheduling.
+    </p>
+  </div>
+
+  <div class="container grid-3">
+
+    <a class="card" href="service-areas.html">
+      <h3>St. Petersburg</h3>
+      <p>
+        Residential service for homeowners throughout St. Petersburg.
+      </p>
+    </a>
+
+    <a class="card" href="service-areas.html">
+      <h3>Tampa Bay Area</h3>
+      <p>
+        Service availability extends to surrounding Tampa Bay communities.
+      </p>
+    </a>
+
+    <a class="card" href="contact.html">
+      <h3>Not Sure?</h3>
+      <p>
+        Contact TaylorMade to discuss your location and service needs.
+      </p>
+    </a>
+
   </div>
 </section>
 
@@ -148,7 +407,13 @@
   </div>
   <div class="container footer-bottom">
     <span>© 2026 TaylorMade Plumbing LLC. All rights reserved.</span>
-    <span><a href="contact.html">Contact</a> · <a href="book-service.html">Book Service</a></span>
+    <span>
+  <a href="contact.html">Contact</a> ·
+  <a href="book-service.html">Book Service</a> ·
+  <a href="privacy-policy.html">Privacy Policy</a> ·
+  <a href="terms.html">Terms of Service</a>
+  <a href="editorial-policy.html">Editorial Policy</a>
+</span>
   </div>
 </footer>
 <script src="js/app.js"></script>

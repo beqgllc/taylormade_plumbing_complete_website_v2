@@ -1,0 +1,35 @@
+# TaylorMade Plumbing
+
+> TaylorMade Plumbing LLC is a residential plumbing company based in St. Petersburg, Florida, serving homeowners in St. Petersburg and surrounding Tampa Bay communities.
+
+## Website
+
+- Homepage: https://taylormadeplumbing.vercel.app/
+- About: https://taylormadeplumbing.vercel.app/about.html
+- Services: https://taylormadeplumbing.vercel.app/services.html
+- Service Areas: https://taylormadeplumbing.vercel.app/service-areas.html
+- Reviews: https://taylormadeplumbing.vercel.app/reviews.html
+- Contact: https://taylormadeplumbing.vercel.app/contact.html
+- Schedule: https://taylormadeplumbing.vercel.app/schedule.html
+
+## Services
+
+TaylorMade Plumbing provides residential service that may include:
+
+- Water heater service
+- Fixture repair and replacement
+- Repiping
+- Drain services
+- Gas-line plumbing work where permitted and within applicable scope
+- Remodel plumbing
+
+## Business Information
+
+- Business name: TaylorMade Plumbing LLC
+- Primary location: St. Petersburg, Florida
+- Phone: (727) 494-4384
+- Florida certified plumbing contractor license: CFC1432798
+
+## Important
+
+Service availability, scope, pricing, scheduling and other project details should be confirmed directly with TaylorMade Plumbing.
