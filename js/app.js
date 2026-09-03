@@ -6,6 +6,73 @@ if (shouldShowLoader) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const serviceContent = {
+    "water-heaters.html": {
+      label: "Water Heater Service",
+      title: "RELIABLE HOT WATER, CLEAR OPTIONS",
+      copy: "We help identify whether repair, replacement, or installation support makes the most sense for your home and your situation.",
+      points: ["Repair and replacement support", "Clear options before work begins", "Careful preparation and clean completion"],
+      placeholder: "Water heater service",
+      image: "assets/water heater.webp"
+    },
+    "fixtures.html": {
+      label: "Fixture Service",
+      title: "THE DETAILS MATTER",
+      copy: "From a stubborn faucet to a fixture replacement, we work carefully around finished surfaces and explain the best path forward.",
+      points: ["Faucets, sinks, toilets, and showers", "Repair and replacement guidance", "Respectful work in finished spaces"],
+      placeholder: "Fixture service",
+      image: "assets/fixtures.webp"
+    },
+    "repiping.html": {
+      label: "Re-Piping Service",
+      title: "A BETTER PLAN FOR AGING PIPING",
+      copy: "Re-piping is a major home decision. We help clarify the condition, scope, and practical options before the work begins.",
+      points: ["Water and drain re-piping support", "Thoughtful project planning", "Thorough, clean installation"],
+      placeholder: "Re-piping work",
+      image: "assets/repiping.webp"
+    },
+    "gas-lines.html": {
+      label: "Gas-Line Service",
+      title: "CAREFUL WORK AROUND CRITICAL SYSTEMS",
+      copy: "Gas-line work demands a measured approach. We discuss the scope clearly and work within applicable requirements.",
+      points: ["Residential gas-line plumbing support", "Clear scope and next steps", "Professional, detail-focused service"],
+      placeholder: "Gas-line service",
+      image: "assets/gas line.webp"
+    },
+    "drain-services.html": {
+      label: "Drain Service",
+      title: "FIND THE BLOCKAGE, FIX THE PROBLEM",
+      copy: "We start with the symptoms and the situation, then explain the appropriate next step for your home.",
+      points: ["Drain troubleshooting and clearing", "Practical diagnosis before recommendations", "Clean, respectful service"],
+      placeholder: "Drain service",
+      image: "assets/drain service.webp"
+    },
+    "remodels.html": {
+      label: "Remodel Plumbing",
+      title: "DETAILS THAT FIT THE BIGGER PICTURE",
+      copy: "Remodel plumbing works best when the plumbing plan and the construction plan stay in communication from start to finish.",
+      points: ["Kitchen and bathroom remodel support", "Coordination around project schedules", "Clean, thorough handoff"],
+      placeholder: "Remodel plumbing",
+      image: "assets/remodel.webp"
+    }
+  };
+  const servicePage = serviceContent[location.pathname.split("/").pop()];
+  const pageHero = document.querySelector(".page-hero");
+  if (servicePage && pageHero) {
+    document.body.classList.add("service-page");
+    document.title = `${servicePage.label} | TaylorMade Plumbing | St. Petersburg FL`;
+    const heroEyebrow = pageHero.querySelector(".eyebrow");
+    const heroTitle = pageHero.querySelector("h1");
+    const heroCopy = pageHero.querySelector("p");
+    if (heroEyebrow) heroEyebrow.textContent = servicePage.label;
+    if (heroTitle) heroTitle.innerHTML = `${servicePage.placeholder.toUpperCase()}<br><span style="color:#0AA9F5">DONE RIGHT.</span>`;
+    if (heroCopy) heroCopy.textContent = servicePage.copy;
+    const points = servicePage.points.map(point => `<li>${point}</li>`).join("");
+    const catalogSection = pageHero.nextElementSibling;
+    if (catalogSection?.classList.contains("section")) catalogSection.classList.add("service-catalog");
+    pageHero.insertAdjacentHTML("afterend", `<section class="section service-focus"><div class="container service-focus-grid"><div><div class="eyebrow">${servicePage.label}</div><h2>${servicePage.title}</h2><p>${servicePage.copy}</p><ul>${points}</ul><a class="btn btn-primary" href="schedule.html">REQUEST SERVICE</a></div><figure class="service-media"><img src="${servicePage.image}" alt="${servicePage.placeholder} project" loading="eager"><figcaption>${servicePage.placeholder}</figcaption></figure></div></section>`);
+  }
+
   const existingFooter = document.querySelector("footer.footer");
   if (existingFooter) {
     fetch("footer.html")
@@ -70,13 +137,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (menuBtn) {
     menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", mobileMenu.classList.contains("open") ? "true" : "false");
+      const isOpen = mobileMenu.classList.toggle("open");
+      document.body.classList.toggle("menu-open", isOpen);
+      mobileMenu.style.setProperty("transform", isOpen ? "translateX(0)" : "", "important");
+      mobileMenu.style.setProperty("visibility", isOpen ? "visible" : "", "important");
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }
 
   document.querySelectorAll(".mobile-menu a").forEach(a => a.addEventListener("click", () => {
     mobileMenu.classList.remove("open");
+    document.body.classList.remove("menu-open");
+    mobileMenu.style.removeProperty("transform");
+    mobileMenu.style.removeProperty("visibility");
+    if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
   }));
 
   // Mark the current nav item.
