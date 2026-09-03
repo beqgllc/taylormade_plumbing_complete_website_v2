@@ -12,7 +12,7 @@ Pages:
 - book-service.html
 
 Assets:
-- assets/taylormade-logo.png (provided by user)
+- assets/taylormade-logo.webp (provided by user)
 
 Run locally:
 1. Open index.html directly in a browser, or

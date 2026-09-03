@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loader.className = "page-loader";
       loader.innerHTML = `
         <div class="brand-splash" aria-live="polite">
-          <img class="brand-monogram" src="assets/monogram.png" alt="TaylorMade Plumbing" />
+          <img class="brand-monogram" src="assets/monogram.webp" alt="TaylorMade Plumbing" />
           <div class="brand-name-shell" aria-label="TaylorMade Plumbing">
             <span class="brand-name-text">TAYLORMAD</span><span class="brand-name-e">E</span>
             <span class="splash-ripple"></span>
@@ -188,43 +188,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const reviews = [
     {
       name: "Chris Kirk",
-      photo: "assets/reviews/chris-kirk.png",
+      photo: "assets/reviews/chris-kirk.webp",
       rating: 5,
       text: "Outstanding service! I recently used TaylorMade Plumbing for leak detection and repair and replacement of a few old faucets. All work was completed efficiently and in a very clean manner (even same-day service for the leak). Throughout the process Michael was responsive and communicated very effectively. It's obvious he's extremely skilled and is a true professional. Highly recommended - you don't need to call anyone else."
     },
     {
       name: "Brittany Sawhill",
-      photo: "assets/reviews/brittany-sawhill.png",
+      photo: "assets/reviews/brittany-sawhill.webp",
       rating: 5,
       text: "Highly recommend. Michael is polite and professional. I recently had a leak which resulted in my tub drain and parts of my main water shut off needing to be replaced. I am very happy with the work he did and would gladly use him for any future plumbing needs. Another company who I will no longer use diagnosed the issue the same day as Michael but they were rude to my guests and said the issue needed to be addressed immediately. Michael was nice and explained the issue could wait until I was in town as long as no one used the tub. I’m glad I waited and got the work done by him. He is honest and reliable."
     },
     {
       name: "Nerissa Bonon",
-      photo: "assets/reviews/nerissa-bonon.png",
+      photo: "assets/reviews/nerissa-bonon.webp",
       rating: 5,
       text: "Michael and Joey did such a a great job. My water heater started leaking. Went on google and found him. I called and he was very quick to respond. Very professional in explaining what caused the issue. Came back the next day with his partner Joey and completed the job. They left my garage nice and clean. He was also very good at following up with regards to permit and inspection. It was an excellent experience with this company and definitely will call them again of any issues with my home plumbing. Thank you TaylorMade!!!"
     },
     {
       name: "Katie Cooper",
-      photo: "assets/reviews/katie-cooper.png",
+      photo: "assets/reviews/katie-cooper.webp",
       rating: 5,
       text: "We were recommended Michael from a friend and had an excellent experience. Our hot water heater went out and when I reached out, he replied within 30minutes and was able to explain all my options with prices up front. He came out the next day and replaced our hot water heater. Kind, professional, and efficient."
     },
     {
       name: "Greg Tucker",
-      photo: "assets/reviews/greg-tucker.png",
+      photo: "assets/reviews/greg-tucker.webp",
       rating: 5,
       text: "I have used TaylorMade Plumbing for several jobs now and I highly recommend them for your plumbing needs! I cannot say enough good things about their promptness, professionalism and workmanship. Michael and his team replaced a leaking shut off valve suppling water to my home, they replaced my old out dated hot water tank with a tankless hot water heater and when I ran into an issue with some old plumbing during a remodel they were there to fix the issues and keep my remodeling project on schedule!"
     },
     {
       name: "Hunter Deese",
-      photo: "assets/reviews/hunter-deese.png",
+      photo: "assets/reviews/hunter-deese.webp",
       rating: 5,
       text: "So, for starters. I typically choose small businesses when I need work done. Which sometimes backfires. After multiple different plumbing companies either not knowing the issue, or wanting to charge an arm and a leg, I was referred by a colleague to call Michael with TaylorMade Plumbing. For one, he’s actually licensed. Not the fly-by-night type of company. Two, just from the initial phone call, he had a few ideas of what the problem may be. Of course, he was spot on. From start to finish, the entire process has been a dream.Fantastic communication, honest, punctual, and more than fair on pricing. The guy knows his stuff. Highly recommend, couldn’t say enough good things about Michael and TaylorMade Plumbing."
     },
     {
       name: "Grant Kasnick",
-      photo: "assets/reviews/grant-kasnick.png",
+      photo: "assets/reviews/grant-kasnick.webp",
       rating: 5,
       text: "I called this company in need of a new plumber due to my current one not quite reliable. I spoke to Micheal and he was really professional and polite and was able to make it out to my house to look at my water heater that was actively leaking. I was stressed thinking that my house was about to flood. Micheal came out and was able to get the heater to replace the heater and put my nerves at ease. Right when he showed up he got right to looking at the heater and informed me what was going on. He did an amazing job easy to say this will be my go to company. Thank you again Micheal for all your help."
     }
